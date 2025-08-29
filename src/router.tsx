@@ -17,7 +17,7 @@ import AboutPage from './pages/AboutPage'
 import PartnersPage from './pages/PartnersPage'
 import SupportUsPage from './pages/SupportUsPage'
 import ProtectedRoute from './components/ProtectedRoute'
-import PublicRoute from './components/PublicRoute'
+import PublicRoute from './components/PublicRoute.tsx'
 
 export const router = createBrowserRouter([
     {

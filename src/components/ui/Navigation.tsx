@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router'
 import { routes } from '../../constants/routes.constants'
 
-export const Navigation = () => {
+export default function Navigation() {
     return (
         <nav
             style={{

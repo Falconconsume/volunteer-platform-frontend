@@ -169,28 +169,21 @@
     "@babel/helper-validator-identifier" "^7.27.1"
 
 "@emnapi/core@^1.4.3", "@emnapi/core@^1.4.5":
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/@emnapi/core/-/core-1.4.5.tgz#bfbb0cbbbb9f96ec4e2c4fd917b7bbe5495ceccb"
-  integrity sha512-XsLw1dEOpkSX/WucdqUhPWP7hDxSvZiY+fsUC14h+FtQ2Ifni4znbBt8punRX+Uj2JG/uDb8nEHVKvrVlvdZ5Q==
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@emnapi/core/-/core-1.5.0.tgz#85cd84537ec989cebb2343606a1ee663ce4edaf0"
+  integrity sha512-sbP8GzB1WDzacS8fgNPpHlp6C9VZe+SJP3F90W9rLemaQj2PzIuTEl1qDOYQf58YIpyjViI24y9aPWCjEzY2cg==
   dependencies:
-    "@emnapi/wasi-threads" "1.0.4"
+    "@emnapi/wasi-threads" "1.1.0"
     tslib "^2.4.0"
 
 "@emnapi/runtime@^1.4.3", "@emnapi/runtime@^1.4.5":
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/@emnapi/runtime/-/runtime-1.4.5.tgz#c67710d0661070f38418b6474584f159de38aba9"
-  integrity sha512-++LApOtY0pEEz1zrd9vy1/zXVaVJJ/EbAF3u0fXIzPJEDtnITsBGbbK0EkM72amhl/R5b+5xx0Y/QhcVOpuulg==
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@emnapi/runtime/-/runtime-1.5.0.tgz#9aebfcb9b17195dce3ab53c86787a6b7d058db73"
+  integrity sha512-97/BJ3iXHww3djw6hYIfErCZFee7qCtrneuLa20UXFCOTCfBM2cvQHjWJ2EG0s0MtdNwInarqCTz35i4wWXHsQ==
   dependencies:
     tslib "^2.4.0"
 
-"@emnapi/wasi-threads@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@emnapi/wasi-threads/-/wasi-threads-1.0.4.tgz#703fc094d969e273b1b71c292523b2f792862bf4"
-  integrity sha512-PJR+bOmMOPH8AtcTGAyYNiuJ3/Fcoj2XN/gBEWzDIKh254XO+mM9XoXHk5GNEhodxeMznbg7BlRojVbKN+gC6g==
-  dependencies:
-    tslib "^2.4.0"
-
-"@emnapi/wasi-threads@^1.0.4":
+"@emnapi/wasi-threads@1.1.0", "@emnapi/wasi-threads@^1.0.4":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@emnapi/wasi-threads/-/wasi-threads-1.1.0.tgz#60b2102fddc9ccb78607e4a3cf8403ea69be41bf"
   integrity sha512-WI0DdZ8xFSbgMjR1sFsKABJ/C5OnRrjT06JXbZKexJGrDuPTzZdDYfFlsgcCXCyf+suG5QU2e/y1Wo2V/OapLQ==
@@ -419,6 +412,7 @@
   version "0.2.10"
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.10.tgz#a2a1e3812d14525f725d011a73eceb41fef5bc1c"
   integrity sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==
+
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/@humanfs/core/-/core-0.19.1.tgz#17c55ca7d426733fe3c561906b8173c336b40a77"
@@ -1293,12 +1287,12 @@ braces@^3.0.3:
     fill-range "^7.1.1"
 
 browserslist@^4.24.0:
-  version "4.25.3"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.25.3.tgz#9167c9cbb40473f15f75f85189290678b99b16c5"
-  integrity sha512-cDGv1kkDI4/0e5yON9yM5G/0A5u8sf5TnmdX5C9qHzI9PPu++sQ9zjm1k9NiOrf3riY4OkK0zSGqfvJyJsgCBQ==
+  version "4.25.4"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.25.4.tgz#ebdd0e1d1cf3911834bab3a6cd7b917d9babf5af"
+  integrity sha512-4jYpcjabC606xJ3kw2QwGEZKX0Aw7sgQdZCvIK9dhVSPh76BKo+C+btT1RRofH7B+8iNpEbgGNVWiLki5q93yg==
   dependencies:
-    caniuse-lite "^1.0.30001735"
-    electron-to-chromium "^1.5.204"
+    caniuse-lite "^1.0.30001737"
+    electron-to-chromium "^1.5.211"
     node-releases "^2.0.19"
     update-browserslist-db "^1.1.3"
 
@@ -1333,7 +1327,7 @@ callsites@^3.0.0:
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
-caniuse-lite@^1.0.30001735:
+caniuse-lite@^1.0.30001737:
   version "1.0.30001737"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001737.tgz#8292bb7591932ff09e9a765f12fdf5629a241ccc"
   integrity sha512-BiloLiXtQNrY5UyF0+1nSJLXUENuhka2pzy2Fx5pGxqavdrxSCW4U6Pn/PoG3Efspi2frRbHpBV2XsrPE6EDlw==
@@ -1517,7 +1511,7 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     es-errors "^1.3.0"
     gopd "^1.2.0"
 
-electron-to-chromium@^1.5.204:
+electron-to-chromium@^1.5.211:
   version "1.5.211"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.211.tgz#749317bf9cf894c06f67980940cf8074e5eb08ca"
   integrity sha512-IGBvimJkotaLzFnwIVgW9/UD/AOJ2tByUmeOrtqBfACSbAw5b1G0XpvdaieKyc7ULmbwXVx+4e4Be8pOPBrYkw==
@@ -2853,21 +2847,6 @@ react-refresh@^0.17.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.17.0.tgz#b7e579c3657f23d04eccbe4ad2e58a8ed51e7e53"
   integrity sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==
 
-react-router-dom@^7.8.2:
-  version "7.8.2"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-7.8.2.tgz#25a8fc36588189baf3bbb5e360c8ffffbd2beabc"
-  integrity sha512-Z4VM5mKDipal2jQ385H6UBhiiEDlnJPx6jyWsTYoZQdl5TrjxEV2a9yl3Fi60NBJxYzOTGTTHXPi0pdizvTwow==
-  dependencies:
-    react-router "7.8.2"
-
-react-router@7.8.2:
-  version "7.8.2"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-7.8.2.tgz#9d2d4147ca72832c550acc60ed688062d18f70b8"
-  integrity sha512-7M2fR1JbIZ/jFWqelpvSZx+7vd7UlBTfdZqf6OSdF9g6+sfdqJDAWcak6ervbHph200ePlu+7G8LdoiC3ReyAQ==
-  dependencies:
-    cookie "^1.0.1"
-    set-cookie-parser "^2.6.0"
-=======
 react-remove-scroll-bar@^2.3.7:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.8.tgz#99c20f908ee467b385b68a3469b4a3e750012223"
@@ -2886,6 +2865,21 @@ react-remove-scroll@^2.6.3:
     tslib "^2.1.0"
     use-callback-ref "^1.3.3"
     use-sidecar "^1.1.3"
+
+react-router-dom@^7.8.2:
+  version "7.8.2"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-7.8.2.tgz#25a8fc36588189baf3bbb5e360c8ffffbd2beabc"
+  integrity sha512-Z4VM5mKDipal2jQ385H6UBhiiEDlnJPx6jyWsTYoZQdl5TrjxEV2a9yl3Fi60NBJxYzOTGTTHXPi0pdizvTwow==
+  dependencies:
+    react-router "7.8.2"
+
+react-router@7.8.2:
+  version "7.8.2"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-7.8.2.tgz#9d2d4147ca72832c550acc60ed688062d18f70b8"
+  integrity sha512-7M2fR1JbIZ/jFWqelpvSZx+7vd7UlBTfdZqf6OSdF9g6+sfdqJDAWcak6ervbHph200ePlu+7G8LdoiC3ReyAQ==
+  dependencies:
+    cookie "^1.0.1"
+    set-cookie-parser "^2.6.0"
 
 react-style-singleton@^2.2.2, react-style-singleton@^2.2.3:
   version "2.2.3"
