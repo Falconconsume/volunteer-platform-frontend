@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 
 import { routes } from './constants/routes.constants'
+
 import HomePage from './pages/HomePage'
 import RegisterPage from './pages/RegisterPage'
 import LoginPage from './pages/LoginPage'
@@ -8,16 +9,17 @@ import RequestsPage from './pages/RequestsPage'
 import CreateRequestPage from './pages/CreateRequestPage'
 import MyRequestsPage from './pages/MyRequestsPage'
 import ProfilePage from './pages/ProfilePage'
-import RootLayout from './components/layouts/RootLayout'
 import NotFoundPage from './pages/NotFoundPage'
 import ContactsPage from './pages/ContactsPage'
 import RequestPage from './pages/RequestPage'
-import RequestsLayout from './components/layouts/RequestsLayout'
 import AboutPage from './pages/AboutPage'
 import PartnersPage from './pages/PartnersPage'
 import SupportUsPage from './pages/SupportUsPage'
+
+import RootLayout from './components/layouts/RootLayout'
+import RequestsLayout from './components/layouts/RequestsLayout'
 import ProtectedRoute from './components/ProtectedRoute'
-import PublicRoute from './components/PublicRoute.tsx'
+import PublicRoute from './components/PublicRoute'
 
 export const router = createBrowserRouter([
     {
