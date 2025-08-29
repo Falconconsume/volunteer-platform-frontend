@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router'
-import { routes } from '../../constants/routes'
+import { routes } from '../../constants/routes.constants'
 
 export const Navigation = () => {
     return (

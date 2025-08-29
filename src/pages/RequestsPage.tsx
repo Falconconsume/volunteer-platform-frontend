@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { routs } from '../constants/routes'
+import { routes } from '../constants/routes.constants'
 
 const mockListRequests = [
     {
@@ -19,7 +19,7 @@ const mockListRequests = [
 export default function RequestsPage() {
     return mockListRequests.map((request) => (
         <div key={request.id}>
-            <Link to={`${routs.requests}/${request.id}`}>{request.title}</Link>
+            <Link to={`${routes.requests}/${request.id}`}>{request.title}</Link>
         </div>
     ))
 }

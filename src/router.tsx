@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 
-import { routes } from './constants/routes'
+import { routes } from './constants/routes.constants'
 import HomePage from './pages/HomePage'
 import RegisterPage from './pages/RegisterPage'
 import LoginPage from './pages/LoginPage'
@@ -16,6 +16,8 @@ import RequestsLayout from './components/layouts/RequestsLayout'
 import AboutPage from './pages/AboutPage'
 import PartnersPage from './pages/PartnersPage'
 import SupportUsPage from './pages/SupportUsPage'
+import ProtectedRoute from './components/ProtectedRoute'
+import PublicRoute from './components/PublicRoute'
 
 export const router = createBrowserRouter([
     {
@@ -27,11 +29,22 @@ export const router = createBrowserRouter([
             { path: routes.partners, element: <PartnersPage /> },
             { path: routes.supportUs, element: <SupportUsPage /> },
             { path: routes.contacts, element: <ContactsPage /> },
-            { path: routes.profile, element: <ProfilePage /> },
+            {
+                path: routes.profile,
+                element: (
+                    <ProtectedRoute>
+                        <ProfilePage />
+                    </ProtectedRoute>
+                ),
+            },
 
             {
                 path: routes.requests,
-                element: <RequestsLayout />,
+                element: (
+                    <ProtectedRoute>
+                        <RequestsLayout />
+                    </ProtectedRoute>
+                ),
                 children: [
                     { index: true, element: <RequestsPage /> },
                     {
@@ -46,8 +59,22 @@ export const router = createBrowserRouter([
                 ],
             },
 
-            { path: routes.register, element: <RegisterPage /> },
-            { path: routes.login, element: <LoginPage /> },
+            {
+                path: routes.register,
+                element: (
+                    <PublicRoute>
+                        <RegisterPage />
+                    </PublicRoute>
+                ),
+            },
+            {
+                path: routes.login,
+                element: (
+                    <PublicRoute>
+                        <LoginPage />
+                    </PublicRoute>
+                ),
+            },
         ],
     },
     { path: '*', element: <NotFoundPage /> },
